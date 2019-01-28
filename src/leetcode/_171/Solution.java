@@ -26,17 +26,12 @@ package leetcode._171;
  */
 public class Solution {
     public static int titleToNumber(String s) {
-        //A == 65
-        //Z == 90
-
-        int len = s.length();
-        int result = 0;
-
-        for (int i = 0; i < len; i++) {
-            char cur = s.charAt(i);
-            result += Math.pow(26, (len - i - 1)) * (cur - 64);
+        int res = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char temp = s.charAt(i);
+            res += Math.pow(26, (s.length() - i - 1)) * (temp - 64);
         }
-        return result;
+        return res;
     }
 
     public static void main(String[] args) {
