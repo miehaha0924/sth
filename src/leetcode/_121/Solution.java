@@ -32,6 +32,7 @@ public class Solution {
             }
         }
         return max;*/
+
         if (prices.length == 0) {
             return 0;
         }
