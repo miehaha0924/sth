@@ -1,4 +1,4 @@
-package leetcode._136;
+package main.leetcode._136;
 
 import com.sun.org.apache.regexp.internal.RE;
 
